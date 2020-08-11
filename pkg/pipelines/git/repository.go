@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/jenkins-x/go-scm/scm"
-	"github.ford.com/sddc/go-scm/scm/factory"
+	"github.com/lavu1911/go-scm/scm/factory"
 )
 
 // Repository represent a Git repository ofa specific Git repository URL
