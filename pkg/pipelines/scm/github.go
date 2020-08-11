@@ -10,7 +10,7 @@ import (
 
 const (
 	githubPushEventFilters = "(header.match('X-GitHub-Event', 'push') && body.repository.full_name == '%s')"
-	githubType             = "github"
+	githubType             = "github.ford"
 )
 
 type githubSpec struct {
