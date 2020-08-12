@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/jenkins-x/go-scm/scm"
-	"github.com/jenkins-x/go-scm/scm/driver/internal/null"
+	"github.com/lavu1911/go-scm/scm/driver/internal/null"
 	errors2 "k8s.io/apimachinery/pkg/util/errors"
 )
 
