@@ -14,7 +14,7 @@ import (
 	"time"
 
 	"github.com/jenkins-x/go-scm/scm"
-	"github.com/jenkins-x/go-scm/scm/transport/internal"
+	"github.com/lavu1911/go-scm/scm/transport/internal"
 )
 
 // clock provides a interface for current time providers. A Clock can be used
