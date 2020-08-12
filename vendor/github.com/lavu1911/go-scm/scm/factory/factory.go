@@ -8,15 +8,15 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jenkins-x/go-scm/scm"
-	"github.com/jenkins-x/go-scm/scm/driver/bitbucket"
-	"github.com/jenkins-x/go-scm/scm/driver/fake"
-	"github.com/jenkins-x/go-scm/scm/driver/gitea"
-	"github.com/jenkins-x/go-scm/scm/driver/github"
-	"github.com/jenkins-x/go-scm/scm/driver/gitlab"
-	"github.com/jenkins-x/go-scm/scm/driver/gogs"
-	"github.com/jenkins-x/go-scm/scm/driver/stash"
-	"github.com/jenkins-x/go-scm/scm/transport"
+	"github.com/lavu1911/go-scm/scm"
+	"github.com/lavu1911/go-scm/scm/driver/bitbucket"
+	"github.com/lavu1911/go-scm/scm/driver/fake"
+	"github.com/lavu1911/go-scm/scm/driver/gitea"
+	"github.com/lavu1911/go-scm/scm/driver/github"
+	"github.com/lavu1911/go-scm/scm/driver/gitlab"
+	"github.com/lavu1911/go-scm/scm/driver/gogs"
+	"github.com/lavu1911/go-scm/scm/driver/stash"
+	"github.com/lavu1911/go-scm/scm/transport"
 	"golang.org/x/oauth2"
 )
 
@@ -178,6 +178,8 @@ func NewWebHookService(driver string) (scm.WebhookService, error) {
 	case "gitea":
 		service = gitea.NewWebHookService()
 	case "github":
+		service = github.NewWebHookService()
+        case "github.ford":
 		service = github.NewWebHookService()
 	case "gitlab":
 		service = gitlab.NewWebHookService()
